@@ -4,6 +4,7 @@ project(sm_matrix_archive)
 find_package(catkin REQUIRED COMPONENTS sm_common)
 include_directories(${catkin_INCLUDE_DIRS})
 find_package(Boost REQUIRED COMPONENTS system filesystem)
+find_package(cmake_modules REQUIRED)
 
 find_package(Eigen3 REQUIRED)
 include_directories(include ${EIGEN3_INCLUDE_DIR} ${catkin_INCLUDE_DIRS})
